@@ -71,19 +71,23 @@ header a:hover {
   color: rgba(9, 9, 121, 1);
 }
 
-header .bord {
-  transition: all .4s;
-  border-bottom: 2px solid rgb(34, 34, 34);
-  padding-bottom: .5rem;
-
-}
 
 
-header .bord:hover {
+header li::after {
+  display: block;
+  content: '';
+  width: 0%;
+  color: #fff;
   border-bottom: 2px solid rgba(9, 9, 121, 1);
-  padding-bottom: .5rem;
-
+  height: 3px;
+  transition: .5s;
 }
+
+header li:hover::after{
+  width: 100%;
+}
+
+
 
 #inscrito {
   border: 2px solid rgba(9, 9, 121, 1);
@@ -141,15 +145,19 @@ form {
 input[type="submit"] {
   height: 50px;
   width: 50%;
-  background-color: rgba(9, 9, 121, 1);
+  
+  background-color: rgba(9, 9, 121, .8);
   color: #fff;
   padding: 0;
   align-self: center;
+  transition: .4s all;
 }
 
 
 input[type="submit"]:hover {
+  background-color: rgba(9, 9, 121, 1);
   cursor: pointer;
+  box-shadow: 2px 2px 5px black;
 }
 
 
@@ -165,6 +173,8 @@ input {
 
 
 footer .footer{
+
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
