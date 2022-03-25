@@ -1,6 +1,6 @@
 ## Gameplay-Landing-Page
 
-Link: 
+Link: https://landing-page-projeto.netlify.app/
 
 O ruim de ser ruim é que você acaba demorando muito tempo fazendo algo tão simples.
 Eu não sei como funciona uma stream mas acho que tem que fazer conta sim.
